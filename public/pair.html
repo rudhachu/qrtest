@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUDHRA PAIR CODE</title>
+    <link rel="icon" href="https://i.imgur.com/oJasfB1.jpeg" type="image/jpeg" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="RUDHRA PAIR CODE">
+    <meta property="og:description" content="Rudhra Pastebin Section ID.">
+    <meta property="og:image" content="https://i.imgur.com/oJasfB1.jpeg">
+    <meta property="og:url" content=" ">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #000000, #01030d);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            padding: clamp(10px, 3vw, 20px);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            width: min(340px, 95%);
+            height: auto;
+            min-height: 340px;
+            padding: clamp(15px, 4vw, 30px);
+            position: relative;
+            text-align: center;
+            background-color: rgba(0, 2, 28, 0.95);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(4, 157, 243, 0.95);
+            box-shadow: 0 0 30px rgba(4, 157, 243, 0.90),
+                        inset 0 0 20px rgba(4, 157, 243, 0.95);
+            animation: glowingBorder 2s infinite alternate;
+        }
+
+        .title {
+            color: #fff;
+            font-size: clamp(1.5em, 5vw, 2em);
+            margin-bottom: clamp(10px, 3vw, 20px);
+            text-shadow: 0 0 10px rgba(0, 227, 255, 0.61);
+        }
+
+        .subtitle {
+            color: #0be0cb;
+            font-size: clamp(1em, 3vw, 1.2em);
+            margin-bottom: clamp(15px, 4vw, 30px);
+        }
+
+     .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .input-container input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: rgba(0, 2, 28, 0.95);
+      border: 1px solid rgba(0, 144, 255, 0.61);
+      box-shadow: 0 0 20px rgba(0, 144, 255, 0.61);
+      color: #fff;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .input-container input:focus {
+      outline: none;
+      border-color: #00bfff
+      box-shadow: 0 0 15px rgba(0, 191, 255);
+    }
+
+    .input-container button {
+            padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 25px);
+            border-radius: 10px;
+            background: linear-gradient(45deg, #7105ff, #4405ff);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: clamp(15px, 4vw, 20px);
+            font-size: clamp(0.8em, 2.5vw, 1em);
+    }
+
+    .input-container button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 144, 255, 0.61);
+    }
+
+        .status {
+            margin: clamp(10px, 3vw, 15px) 0;
+            padding: clamp(8px, 2vw, 10px);
+            border-radius: 8px;
+            background: rgba(0, 2, 28, 0.95);
+            animation: pulse 2s infinite;
+            font-size: clamp(0.9em, 2.5vw, 1em);
+        }
+
+        .refresh-btn {
+            padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 25px);
+            border-radius: 10px;
+            background: linear-gradient(45deg, #7105ff, #4405ff);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: clamp(15px, 4vw, 20px);
+            font-size: clamp(0.8em, 2.5vw, 1em);
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 144, 255, 0.61);
+        }
+
+        .footer {
+            margin-top: clamp(15px, 4vw, 20px);
+            color: #999;
+            font-size: clamp(0.8em, 2vw, 0.9em);
+            text-align: center;
+            width: 100%;
+        }
+
+        .emoji {
+            font-size: clamp(1.2em, 4vw, 1.5em);
+            margin: clamp(8px, 2vw, 10px) 0;
+        }
+
+        .instructions {
+            margin: clamp(10px, 3vw, 15px) 0;
+            padding: clamp(10px, 3vw, 15px);
+            background: rgba(0, 2, 28, 0.95);
+            border-radius: 10px;
+            font-size: clamp(0.8em, 2.5vw, 0.9em);
+            line-height: 1.6;
+            color: #ccc;
+            width: 100%;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes glowingBorder {
+            from {
+                box-shadow: 0 0 20px rgba(149, 0, 255, 1),
+                            inset 0 0 10px rgba(3, 209, 4, 1);
+            }
+            to {
+                box-shadow: 0 0 40px rgba(97, 28, 226, 0.95),
+                            inset 0 0 20px rgba(4, 157, 243, 0.95);
+            }
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 360px) {
+            .box {
+                padding: 10px;
+            }
+
+            .qr-container {
+                padding: 10px;
+            }
+
+            .instructions {
+                font-size: 0.8em;
+            }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="emoji">⌨</div>
+            <h2 class="title">RUDHRA PAIR CODE</h2>
+            <p class="subtitle">Rudhra Pastebin section ID</p>
+
+            <div class="input-container">
+          <input type="tel" id="number" placeholder="Enter Number (e.g.,91xxxxxxxxx)" pattern="[0-9]+" inputmode="numeric" />
+          <button id="submit">Generate Code</button>
+        </div>
+        <div id="pair"></div>
+
+        <div class="status" id="status">
+            <div class="instructions">
+                <button onclick="javascript:history.go(0)" class="refresh-btn">Refresh 🔄</button>
+            </div>
+            <div class="footer">
+                <p>Hey, if you don't get the section ID, try server 2.</p>
+
+            </div>
+            <div class="container">
+          <div></div>
+    <div></div>
+    <a href="/web-pair" class="button" target="_blank"> <span>𝗧𝗿𝘆 𝗖𝗼𝗱𝗲 𝘀𝗲𝗿𝘃𝗲𝗿 𝟭 ➥</span> </a> <br>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+      <script>
+    const pairElement = document.getElementById("pair");
+    const submitButton = document.getElementById("submit");
+    const numberInput = document.getElementById("number");
+    const boxElement = document.getElementById("box");
+
+    async function Copy() {
+      try {
+        const copyElement = document.getElementById("copy");
+        const textToCopy = copyElement.innerText.replace('CODE: ', '');
+        await navigator.clipboard.writeText(textToCopy);
+
+        const originalText = copyElement.innerText;
+        copyElement.innerText = "COPIED";
+        copyElement.style.color = "#009dff";
+        copyElement.style.fontWeight = "bold";
+
+        setTimeout(() => {
+          copyElement.innerText = originalText;
+          copyElement.style.color = "#fff";
+          copyElement.style.fontWeight = "bold";
+        }, 500);
+      } catch (err) {
+        console.error('Failed to copy text:', err);
+      }
+    }
+
+    submitButton.addEventListener("click", async (e) => {
+      e.preventDefault();
+
+      const number = numberInput.value.replace(/[^0-9]/g, "");
+
+      if (!number) {
+        pairElement.innerHTML = '<span style="color:#ff3333;font-weight:bold"> Enter your WhatsApp number with country code</span><br><br>';
+        return;
+      }
+
+      if (number.length < 11) {
+        pairElement.innerHTML = '<span style="color:#ff3333;font-weight:bold"> Invalid number format</span><br><br>';
+        return;
+      }
+
+      // Format the phone number
+      const formattedNumber = number.split('').reduce((acc, digit, index) => {
+        if (index === 2 || index === 7) return acc + ' ' + digit;
+        return acc + digit;
+      }, '');
+
+      numberInput.type = "text";
+      numberInput.value = "+" + formattedNumber;
+      numberInput.style.color = "#fff";
+      numberInput.style.fontSize = "20px";
+
+      pairElement.innerHTML = '<span style="color:#fff;font-weight:bold">Please wait for some time...</span><br><br>';
+
+      try {
+        const { data } = await axios(`/code?number=${number}`);
+        const code = data.code || "Service Unavailable";
+        pairElement.innerHTML = `
+          <div id="copy" onclick="Copy()" style="color:#fff;font-weight:bold;font-size:1.25em">
+            CODE: <span style="color:#009dff;font-weight:bold">${code}</span>
+          </div><br><br>
+        `;
+      } catch (error) {
+        pairElement.innerHTML = '<span style="color:#ff3333;font-weight:bold"> Service Error. Please try again later.</span><br><br>';
+      }
+    });
+  </script>
+</body>
+</html>
