@@ -108,7 +108,7 @@ if (qr) {
 					await delay(10000);
 					const mergedJSON = await readSpecificJSONFiles(__dirname+`/temp/${id}/`);
 					fs.writeFileSync(__dirname+`/temp/${id}/${id}.json`, JSON.stringify(mergedJSON));
-					const output = await pastebin.createPasteFromFile(__dirname+`/temp/${id}/${id}.json`, "pastebin-js test", null, 1, "N");
+					const output = await pastebin.createPasteFromFile(__dirname+`/temp/${id}/${id}.json`, "pastebin-api test", null, 1, "N");
 					let message = output.split('/')[3];
 										let msg = `Rudhra~${message.split('').reverse().join('')}`;
 					await session.sendMessage(session.user.id, {
